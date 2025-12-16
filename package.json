@@ -1,0 +1,12 @@
+{
+  "name": "proxy-tester",
+  "type": "module",
+  "main": "electron/main.ts",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix renderer\" \"electron .\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "electron": "^39.2.7"
+  }
+}
