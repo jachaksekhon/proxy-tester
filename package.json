@@ -6,6 +6,7 @@
     "dev": "concurrently \"npm run dev --prefix renderer\" \"electron .\""
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "concurrently": "^9.2.1",
     "electron": "^39.2.7"
   }
