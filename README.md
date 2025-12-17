@@ -72,3 +72,36 @@ The demo shows:
 
 Each proxy is tested using the following pipeline:
 
+TCP Connect
+→ HTTP CONNECT
+→ TLS Handshake
+→ Minimal HTTPS Request (HEAD /)
+
+This ensures that the proxies being tested aren't burning unnecessary data when being tested. Full GET and HEAD requests would burn data that is not needed to be burned.
+
+The reported time represents how long it takes for a proxy to become **fully usable for real HTTPS traffic**, closely mirroring how bots experience proxy performance during real tasks.
+
+## 🧰 Languages & Technologies Used
+
+### Languages
+- **TypeScript** — application logic and UI
+- **JavaScript** — runtime support
+- **HTML & CSS** — UI structure and styling
+
+### Technologies & Frameworks
+- **Electron** — desktop application runtime
+- **Vite** — fast frontend bundler
+- **React** — UI framework
+- **shadcn/ui** — reusable UI components
+- **Tailwind CSS** — utility-first styling
+- **Node.js (`net`, `tls`)** — low-level proxy networking
+
+---
+
+## 🚀 Usage
+
+This project is primarily distributed as a **Windows executable** for ease of use.
+
+Project was bundled into an executable that my friends are able to download and use on their PC's!
+
+Built with ❤️ to make proxy selection less of a guessing game.
